@@ -1,0 +1,103 @@
+body{
+    background: linear-gradient(70deg, #22333d, #485663);   
+}
+#inicio {
+    border-radius: 25px;
+    background: white;
+    padding: 20px; 
+    width: 750px;
+    height: 550px; 
+    left: 900px;
+    top: 145px;
+    position:absolute;
+    z-index: 1;
+}
+#logo {
+    border-radius: 100%;
+    background: #3e4b54;
+    padding: 2px; 
+    width: 490px;
+    height: 490px; 
+    left: 500px;
+    top: 195px;
+    position:absolute;
+  z-index: 1;
+}
+
+#img {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-flow: row;
+    width: 53%;
+    height: 53%;
+    left: 498px;
+    top: 195px;
+}
+
+#inicio {
+    text-align: center;
+}
+
+#ema {
+    width: 23%;
+    padding: 25px 30px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: rgb(182, 182, 182);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 270px;
+    margin-left: 52%;
+    position: absolute;
+    z-index: 3;
+    
+  }
+  #pass {
+    width: 23%;
+    padding: 25px 30px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: rgb(182, 182, 182);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 380px;
+    margin-left: 52%;
+    position: absolute;
+    z-index: 3;
+  }
+  
+  #button1 {
+    background-color: #d757f7; 
+    color: black; 
+    
+    margin-top: 520px;
+    margin-left: 58%;
+    position: absolute;
+    z-index: 3;
+    border-radius: 15px;
+    width: 210px;
+    height: 60px;
+  }
+  
+  #button1:hover {
+    background-color: #9493ff;
+    color: white;
+  }
+  
+
+  #con{
+    margin-top: 590px;
+    margin-left: 59%;
+    position: absolute;
+    z-index: 3;
+  }
+
+  #reg {
+    margin-top: 660px;
+    margin-left: 54%;
+    position: absolute;
+    z-index: 3;
+  }

@@ -1,0 +1,191 @@
+body{
+    background: linear-gradient(70deg, #22333d, #485663);   
+}
+#inicio {
+    border-radius: 25px;
+    background: white;
+    padding: 20px; 
+    width: 65%;
+    height: 605px; 
+    left: 30%;
+    top: 145px;
+    position:absolute;
+    z-index: 1;
+}
+
+#logo {
+    border-radius: 100%;
+    background: #3e4b54;
+    padding: 2px; 
+    width: 490px;
+    height: 490px; 
+    left: 10%;
+    top: 215px;
+    position:absolute;
+  z-index: 1;
+}
+
+#img {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-flow: row;
+    width: 53%;
+    height: 53%;
+    left: 10%;
+    top: 215px;
+}
+
+#inicio {
+    text-align: center;
+}
+#name {
+    width: 23%;
+    padding: 25px 30px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: rgb(182, 182, 182);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 230px;
+    margin-left: 38%;
+    position: absolute;
+    z-index: 3;
+}
+#ape {
+    width: 23%;
+    padding: 25px 30px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: rgb(182, 182, 182);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 230px;
+    margin-left: 64%;
+    position: absolute;
+    z-index: 3;
+}
+#tdoc {
+    width: 23%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ccc;
+  margin-top: 325px;
+    margin-left: 38%;
+    position: absolute;
+    z-index: 3;
+}
+
+#ndoc {
+    width: 23%;
+    padding: 25px 30px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: rgb(182, 182, 182);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 325px;
+    margin-left: 64%;
+    position: absolute;
+    z-index: 3;
+}
+
+#ema {
+    width: 23%;
+    padding: 25px 30px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: rgb(182, 182, 182);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 378px;
+    margin-left: 38%;
+    position: absolute;
+    z-index: 3;
+  }
+
+  #fnac{
+    padding: 20px 30px;
+    margin-top: 387px;
+    margin-left: 64%;
+    position: absolute;
+    z-index: 3;
+  }
+#tele{
+  width: 23%;
+    padding: 25px 30px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: rgb(182, 182, 182);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 470px;
+    margin-left: 38%;
+    position: absolute;
+    z-index: 3;
+}
+
+#rol{
+    width: 23%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ccc;
+    margin-top: 475px;
+      margin-left: 64%;
+      position: absolute;
+      z-index: 3;
+}
+  #pass {
+    width: 23%;
+    padding: 25px 30px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: rgb(182, 182, 182);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 579px;
+    margin-left: 38%;
+    position: absolute;
+    z-index: 3;
+  }
+  
+  #button1 {
+    background-color: #d757f7; 
+    color: black; 
+    
+    margin-top: 585px;
+    margin-left: 65%;
+    position: absolute;
+    z-index: 3;
+    border-radius: 15px;
+    width: 210px;
+    height: 60px;
+  }
+  
+  #button1:hover {
+    background-color: #9493ff;
+    color: white;
+  }
+  
+
+  #reg {
+    margin-top: 670px;
+    margin-left: 64%;
+    position: absolute;
+    z-index: 3;
+  }
+
+  #pol {
+    margin-top: 670px;
+    margin-left: 48%;
+    position: absolute;
+    z-index: 3;
+  }
