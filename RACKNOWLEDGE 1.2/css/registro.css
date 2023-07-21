@@ -1,0 +1,166 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #232323;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+/*::-webkit-scrollbar {
+  display: none;
+}
+*/
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(228, 228, 228);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(60deg, rgba(119,118,255,1) 0%, rgba(174,44,241,1) 100%); 
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(60deg, rgba(119,118,255,1) 0%, rgba(174,44,241,1) 100%);
+}
+
+a:link {
+  color: #7776ff;
+}
+
+a:visited {
+  color: #ae2cf1;
+}
+
+body{
+  background: rgb(65,67,68);
+  background: linear-gradient(60deg, rgba(65,67,68,1) 0%, rgba(30,30,30,1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.input {
+  font-size: 15px;
+  width: 420px;
+  margin-left: 98px;
+  margin-top: 20px;
+  height: 52px;
+  padding: 0px 20px;
+  border: none;
+  background-color: rgb(205, 205, 205);
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.bglogo {
+  border-radius: 100%;
+  background: #525252;
+  width: 410px;
+  height: 410px; 
+  left: 150px;
+  top: 110px;
+  position:absolute;
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-flow:row-reverse;
+  width: 59%;
+  height: 59%;
+  left: -231px;
+  top: 124px;
+}
+
+.registro {
+  background: rgb(220, 220, 220);
+  border: none;
+  border-radius: 32px;
+  padding: 20px;
+  width: 640px;
+  height: 440px;
+  margin-left: 495px;
+  margin-top: 85px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.reg {
+  text-align: center;
+  color: rgb(35, 35, 35);
+  margin-top: -2px;
+}
+
+.input#tipo_doc{
+  width: 180px;
+  padding: 15px;
+}
+
+.input#n_doc{
+  width: 219px;
+  display: flex;
+  margin-left: 299px;
+  margin-top: -52px;
+}
+
+.input#email{
+  margin-top: 0px;
+}
+
+#fn{
+  margin-top: -37px;
+  margin-left: 118px;
+  z-index: 2;
+  color: #757575;
+}
+
+.input#fnac{
+  width: 305px;
+  text-align: right;
+  z-index: 1;
+}
+
+.input#rol{
+  width: 96px;
+  display: flex;
+  margin-left: 305px;
+  margin-top: -36px;
+}
+
+.input#pass{
+  display: flex;
+  margin-left: -20px;
+  margin-top: 0px;
+}
+
+.pol {
+  font-size: 11px;
+  text-align: center;
+  margin-top: -10px;
+  margin-right: 10px;
+}
+
+.buttom_registro {
+  background: linear-gradient(60deg, rgba(119,118,255,1) 0%, rgba(174,44,241,1) 100%);
+  font-size: 18px;
+  color: white;    
+  width: 170px;
+  height: 60px;
+  margin-top: 20px;
+  margin-right: -5px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
