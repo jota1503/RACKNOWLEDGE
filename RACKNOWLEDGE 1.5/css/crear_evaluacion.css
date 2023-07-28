@@ -1,0 +1,164 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.header {
+    background-color: #7776ff;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.seleccionar-preguntas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.seleccionar-preguntas label {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.seleccionar-preguntas select {
+    width: 100%;
+    max-width: 200px;
+    padding: 8px;
+    border: 2px solid #7776ff;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #f2f2f2;
+    color: #333333;
+    appearance: none;
+    -moz-appearance: textfield;
+    text-align-last: center;
+}
+
+.seleccionar-preguntas select option {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.crear-btn {
+    background-color: #7776ff;
+    color: #ffffff;
+    font-size: 1em;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.crear-btn:hover {
+    background-color: #ae2cf1;
+}
+
+.crear-btn:active {
+    background-color: #8A2BE2;
+}
+
+.preguntas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.pregunta, .nombre-evaluacion {
+    text-align: left;
+    padding: 20px;
+    border: 2px solid #7776ff;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.pregunta input, .nombre-evaluacion input {
+    width: 100%;
+    max-width: 500px;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #f2f2f2;
+    color: #333333;
+    text-align: center;
+}
+
+.preguntas-container {
+    overflow-y: auto;
+    max-height: 400px; 
+}
+
+.nombre-evaluacion {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.nombre-evaluacion input {
+    width: 100%;
+    max-width: 500px;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+.preguntas-container::-webkit-scrollbar {
+    width: 12px; 
+    background-color: #f2f2f2; 
+  }
+  
+  
+  .preguntas-container::-webkit-scrollbar-thumb {
+    background-color: #7776ff; 
+    border-radius: 6px; 
+  }
+  
+  .preguntas-container::-webkit-scrollbar-track {
+    background-color: #f2f2f2; 
+    border-radius: 6px; 
+  }
+ 
+  .preguntas-container::-webkit-scrollbar-thumb:vertical {
+    background-color: #7776ff; 
+    border-radius: 6px; 
+  }
