@@ -50,6 +50,7 @@ body{
     max-width: 22em;
     max-height: 22em;
     z-index: 1;
+    padding: 10px 10px 10px 10px;
 }
 
 .ini{
@@ -135,8 +136,8 @@ form{
 .reg{
     text-align: center;
     position: relative;
-    top: 15px;
-    margin: 0;
+    margin: 5 0 20 0;
+
 }
 
 .reg > a{

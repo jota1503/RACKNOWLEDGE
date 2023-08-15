@@ -96,6 +96,10 @@ main {
     background: linear-gradient(60deg, rgba(119, 118, 255, 1) 0%, rgba(174, 44, 241, 1) 100%);
     color: #fff;
     border-radius: 100%;
+    position: relative;
+    width: 4%;
+    max-height: 4% !important;
+    height: auto;
 }
 
 .juego a {
