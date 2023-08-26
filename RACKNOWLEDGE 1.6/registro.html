@@ -1,0 +1,92 @@
+<html lang="en">
+    <head>
+        <title>RACKNOWLEDGE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/registro.css" rel="stylesheet">
+        <link rel="shortcut icon" href="img/Logo.ico">
+    </head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <div class="box grid">
+        <div class="img-fluid bglogo item1"><img src="img/Logo.png" class="img-fluid logo"/></div>
+        <div class="registro item2">
+            <div class="reg">
+                <h1 class="tittle_Reg">Registrate</h1><br>
+            </div>
+            <div class="form">
+                <form>
+                    <div class="field field_1">
+                        <input type="text" id="nombre_Reg" class="form-control nombre_Reg" placeholder="Nombre"/>
+                    </div>
+                    <div class="field field_2">
+                        <input type="text" id="apellido_Reg" class="form-control apellido_Reg" placeholder="Apellido"/>
+                    </div>
+                    <div class="field field_3">
+                        <select class="form-select tip_doc">
+                            <option value="">Tipo de documento</option>
+                            <option value="TI">TI</option>
+                            <option value="CC">CC</option>
+                            <option value="CE">CE</option>
+                            <option value="RUT">RUT</option>
+                        </select>
+                    </div>
+                    <div class="field field_4">
+                        <input type="text" id="n_doc_Reg" class="form-control n_doc_Reg" placeholder="Número de documento"/>
+                    </div>
+                    <div class="field field_5">
+                        <input type="email" id="email_Reg" class="form-control email_Reg" placeholder="Correo"/>
+                    </div>
+                    <div class="field field_6">
+                        <input type="text" id="tel_Reg" class="form-control tel_Reg" placeholder="Teléfono"/>
+                    </div>
+                    <div class="field field_7">
+                        Fecha de nacimiento<input type="date" id="f_nac_Reg" class="f_nac_Reg"/>
+                    </div>
+                    <div class="field field_8">
+                        <select class="form-select rol">
+                            <option value="">Rol</option>
+                            <option value="est">Estudiante</option>
+                            <option value="prof">Profesor</option>
+                            <option value="admin">Administrador</option>
+                        </select>
+                    </div>
+                    <div class="field field_9">
+                        <input type="password" id="pass_Reg" class="form-control pass_Reg" placeholder="Contraseña"/>
+                    </div>
+                    <div class="field_10">
+                        <p class="txt_pol">Al registrarte aceptas nuestras <a data-bs-toggle="modal" data-bs-target="#exampleModal">políticas de uso y privacidad</a></p>
+                    </div>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5 pol" id="exampleModalLabel">Políticas de uso y privacidad</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    Reconoce y protege el derecho que tienen todas las personas a conocer, 
+                                    actualizar y rectificar las informaciones que se hayan recogido sobre 
+                                    ellas en bases de datos o archivos que sean susceptibles de tratamiento 
+                                    por entidades de naturaleza pública o privada.<br><br>
+                                    Ley 1581 de 2012
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field_11">
+                            <div class="submit_btn">
+                                <button type="submit" class="reg_Btn" id="reg_Btn" href="./home.html"><a href="./home.html">REGISTRARSE</a></button>
+                            </div>
+                        </div>
+
+                        <div class="field_12">
+                            <p class="logged">Si ya tiene cuenta <a href="inicio.html" >ingrese acá</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+</body>
