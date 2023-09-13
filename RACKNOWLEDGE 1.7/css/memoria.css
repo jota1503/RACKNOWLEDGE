@@ -1,0 +1,132 @@
+:root {
+    --w: calc(12vw);
+    --h: calc(15vh);
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(60deg, rgba(119,118,255,1) 0%, rgba(174,44,241,1) 100%); 
+    border-radius: 10px;
+}
+
+* {
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.btn_regreso{
+    width: 28px;
+    height: 28px;
+    border-radius: 20px;
+    margin: 0px;
+    border: none;
+    padding: 6px 6px 6px 4px;
+    background: linear-gradient(60deg, rgba(119,118,255,1) 0%, rgba(174,44,241,1) 100%);
+    justify-content: left !important;
+} 
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+}
+
+#tablero{
+    margin: 30px 0px 10px 0px;
+}
+
+
+        div {
+            display: inline-block;
+        }
+
+        .area-tarjeta, .tarjeta, .cara {
+            cursor: pointer;
+            width: var(--w);
+            height: var(--h);
+        }
+
+        .tarjeta {
+            position: relative;
+            transform-style: preserve-3d;
+            animation: iniciar 0.5s;
+        }
+
+        .cara {
+            position: absolute;
+            backface-visibility: hidden;
+            box-shadow: 0 0 5px rgba(170, 170, 170, 0.205);
+            font-size: 2.5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .trasera {
+            background-color: #cdcdcd;
+            transform: rotateY(180deg);
+        }
+
+        .superior {
+            background: linear-gradient(60deg,#7776ff, #ae2cf1);
+            border-radius: 10px;
+        }
+
+        .btn_ng{   
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        }
+
+        .nuevo-juego {
+            cursor: pointer;
+            background: linear-gradient(60deg,#7776ff, #ae2cf1);
+            padding: 1rem;
+            border-radius: 25px;
+            border: none;
+            color: #fff;
+            font-size: 1rem;
+            margin: 0px;
+        } 
+        
+        @keyframes iniciar {
+            20%, 90% {
+                transform: rotateY(180deg);
+            }
+            0%, 100% {
+                transform: rotateY(0deg);
+            }
+        }
+
+        #felicitacion {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+#felicitacion h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#felicitacion p {
+  font-size: 20px;
+  margin: 0;
+}

@@ -1,0 +1,146 @@
+*{
+    font-family: 'Segoe UI';
+    text-decoration: none;
+    user-select: none;
+}
+
+a:link {
+    color: #7776ff;
+}
+  
+a:visited {
+    color: #ae2cf1;
+}  
+
+::-webkit-scrollbar {
+    display: scroll;
+}  
+
+body{
+    background: linear-gradient(60deg, #414344, #1e1e1e); /*Tema Oscuro (Default)*/
+    /*background: linear-gradient(60deg, #8e9eab, #eef2f3);*/ /*Tema Claro*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.box {
+    padding: 5% 16% 5% 16%;
+    min-width: 62%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.item1{
+    margin: auto auto auto auto; 
+}
+
+.item2 {
+    margin: 55px 0px 55px 0px;
+}
+
+.bglogo {
+    border-radius: 100%;
+    background: #525252;
+    max-width: 22em;
+    max-height: 22em;
+    z-index: 1;
+    padding: 10px 10px 10px 10px;
+}
+
+.ini{
+    text-align: center;
+    font-size: 30px;
+    color: #232323;
+    position: relative;
+    top: 15px;
+    margin: 0;
+}
+
+.inicio{
+    background: #dcdcdc;
+    border: none;
+    border-radius: 32px;
+    width: auto;
+    min-height: auto;
+    max-height: 400px;
+    position: relative;
+    left: -50px;
+}
+
+.form-control{
+    background-color: #cdcdcd;
+    font-size: 15px;
+    border: none;
+    border-radius: 12px;
+    width: 340px;
+    height: 52px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    position: relative;
+    top: 0px;
+}
+
+.form-control:focus{
+    background-color: #cdcdcd;
+}
+
+form{
+    display: flex;
+    position: relative;
+    top: 25px;
+    justify-content: center;
+    margin: 0px;
+}
+
+.btn_ent{
+    position: relative;
+    display: flex;
+    justify-content: center ;
+}
+
+.btn_entrar{
+    background: linear-gradient(60deg,#7776ff, #ae2cf1);
+    font-size: 18px;
+    border: none;
+    border-radius: 16px;
+    width: 155px;
+    height: 55px;
+    cursor: pointer;
+    position: relative;
+    top: 6px;
+}
+.btn_entrar > a {
+  text-decoration: none;
+  outline: none;
+  color: white;
+}
+
+.pass_olv{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 20px;
+}
+
+.pass_olv > a {
+    text-decoration: none;
+    outline: none;
+}
+
+.reg{
+    text-align: center;
+    position: relative;
+    margin: 5 0 20 0;
+
+}
+
+.reg > a{
+    outline: none;
+    text-decoration: none;
+}
