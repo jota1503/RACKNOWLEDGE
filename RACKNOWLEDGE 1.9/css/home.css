@@ -1,0 +1,291 @@
+
+* {
+  font-family: "Segoe UI";
+  color: #232323;
+  font-style: normal;
+  text-decoration: none;
+  user-select: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(228, 228, 228);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    60deg,
+    rgba(119, 118, 255, 1) 0%,
+    rgba(174, 44, 241, 1) 100%
+  );
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    60deg,
+    rgba(119, 118, 255, 1) 0%,
+    rgba(174, 44, 241, 1) 100%
+  );
+}
+
+a{
+  text-decoration: none;
+  color: rgb(220, 220, 220);
+}
+
+/*
+a:link {
+  color: #7776ff;
+}
+
+a:visited {
+  color: #ae2cf1;
+}
+*/
+::-webkit-scrollbar {
+  display: none;
+}
+
+.btn_user {
+  background-color: #525252;
+  border: none;
+  border-radius: 8px;
+  padding: 18px;
+  width: 290px;
+  min-height: 100% !important;
+  /**/
+  margin-right: 0px !important;
+}
+
+.contenido {
+  color: rgb(220, 220, 220);
+  width: 100%; /*Tamano contenido */
+  min-height: 100% !important;
+  background-color: #525252;
+  float: right;
+  border: none;
+  border-radius: 8px;
+  padding: 1em;
+  box-sizing: border-box;
+} 
+
+button {
+  background-color: #333333;
+  font-size: 20px;
+  color: rgb(220, 220, 220);
+  border: none;
+  border-radius: 8px;
+  height: 42px;
+  width: 255px;
+  margin-top: 12px;
+  transition: background-color 0.5s ease;
+}
+
+button:hover {
+  background: linear-gradient(
+    60deg,
+    rgba(119, 118, 255, 1) 0%,
+    rgba(174, 44, 241, 1) 100%
+  );
+  color: rgb(220, 220, 220);
+}
+.user {
+  background-color: #333333;
+  border: none;
+  border-radius: 8px;
+  height: 190px;
+}
+.perfil-img {
+  width: 78px;
+  height: 78px;
+  border: 2px solid #414344;
+  border-radius: 50%;
+  z-index: 2;
+}
+.user_name {
+  color: rgb(220, 220, 220);
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+.user-cont {
+  width: 100%;
+  display: flex;
+}
+.info-user {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.cont-box {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 3px;
+  color: rgb(220, 220, 220);
+  width: auto;
+  min-height: 84px;
+  background: linear-gradient(#525252, #525252) padding-box,
+    linear-gradient(to top, #7776ff, #ae2cf1) border-box;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  margin: 8px 7px; /*Ajustar separacion entre about y el gold*/
+}
+
+.about{
+  color: rgb(220, 220, 220);
+  text-align: left !important;
+  padding-left: 6px;
+  font-size: 12px;
+}
+
+.img_sub {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+  margin-top: 3px;
+}
+
+.btn_temas {
+  margin-top: 30px;
+}
+
+.logo{
+  width: 80px;
+  height: 80px;
+  display: flex;
+  margin: 20px 0px 0px 90px;
+  opacity: 0%;
+  transition: 0.6s;
+}
+
+.logo:hover{
+  opacity: 100%;
+}
+
+.content {
+  gap: 1em; /*Tamano entre menu y contenedor*/
+  padding: 1em;
+  height: 100vh;
+  min-height: 100vh !important;
+  width: 100% !important;
+  overflow: hidden;
+  display: flex;
+}
+.contenido {
+  display: flex;
+  align-items: flex-start; /* Alinea el contenido en la parte superior */
+  justify-content: space-between; /* Distribuye el contenido a los lados */
+}
+
+.iframe-container {
+  flex: 1;
+  margin-left: 5px; /* Ajusta el margen según tu diseño */
+  width: 70%; /* Ancho al 70% del contenedor */
+}
+
+/* Ajusta el tamaño del iframe */
+#iframeContenido {
+  width: 100%; /* Ancho al 100% del contenedor */
+  height: 590px; /* Altura en píxeles, ajusta según tus necesidades */
+}
+
+/* Checkbox estilo de luna */
+
+.check {
+  top: auto; /* Ajusta la posición vertical según sea necesario */
+  right: -85px; /* Ajusta la posición horizontal según sea necesario */
+	position: relative;
+	background: linear-gradient(60deg, #8b40e5 30%, #ffffff 100%);
+	line-height: 0;
+	perspective: 400px;
+}
+
+.check input[type="checkbox"],
+.check label,
+.check label::before,
+.check label::after,
+.check {
+	appearance: none;
+	display: inline-block;
+	border-radius: 1rem;
+	border: 0;
+	transition: 0.35s ease-in-out;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.check label {
+	width: 4.5rem;
+	height: 2rem;
+	background: #333333;
+	overflow: hidden;
+}
+
+.check input[type="checkbox"] {
+	position: absolute;
+	z-index: 1;
+	width: 1.6rem;
+	height: 1.6rem;
+	top: 0.15rem;
+	left: 0.3rem;
+	background: linear-gradient(45deg, #dedede, #ffffff);
+	box-shadow: 0 6px 7px rgba(0, 0, 0, 0.3);
+	outline: none;
+}
+
+.check input[type="checkbox"]:checked {
+	left: 2.7rem;
+}
+
+.check input[type="checkbox"]:checked + label {
+	background: transparent;
+}
+
+.check label::before,
+.check label::after {
+	content: "· ·";
+	position: absolute;
+	overflow: hidden;
+	left: 0.4rem;
+	top: 0.9rem;
+	height: 1rem;
+	letter-spacing: -0.19rem;
+	color: #9b9b9b;
+	font-family: "Times New Roman", serif;
+	z-index: 2;
+	font-size: 1.5rem;
+	border-radius: 0;
+	transform-origin: 0 0 -0.5rem;
+	backface-visibility: hidden;
+}
+
+.check label::after {
+	content: "●";
+	top: 1.2rem;
+	left: 0.8rem;
+	height: 0.1rem;
+	width: 0.35rem;
+	font-size: 0.4rem;
+	transform-origin: 0 0 -0.4rem;
+}
+
+.check input[type="checkbox"]:checked + label::before,
+.check input[type="checkbox"]:checked + label::after {
+	left: 3.2rem;
+	top: 0.4rem;
+	line-height: 1.1rem;
+	transform: rotateY(360deg);
+}
+
+.check input[type="checkbox"]:checked + label::after {
+	height: 0.16rem;
+	top: 1.1rem;
+	left: 3.5rem;
+	font-size: 0.6rem;
+	line-height: 0;
+}

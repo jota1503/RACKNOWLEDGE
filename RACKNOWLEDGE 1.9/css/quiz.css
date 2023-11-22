@@ -1,0 +1,131 @@
+* {
+    font-family: 'Segoe UI';
+    text-decoration: none;
+}
+
+a:link {
+    color: #7776ff;
+}
+  
+a:visited {
+    color: #ae2cf1;
+}  
+
+::-webkit-scrollbar {
+    display: scroll;
+}  
+
+.btn_regreso{
+    width: 20px;
+    height: 17px;
+    border-radius: 100%;
+    margin: 0px;
+    border: none;
+    padding: 6px 6px 6px 4px;
+    background: linear-gradient(60deg, rgba(119,118,255,1) 0%, rgba(174,44,241,1) 100%);
+} 
+
+body {
+    margin: 0px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px 20px 18px 20px;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.encabezado {
+    background: linear-gradient(60deg, #7776ff, #ae2cf1);
+    padding: 10px;
+    border-radius: 8px;
+    color: #ebebeb;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#pregunta {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.opcion {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #cdcdcd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #cdcdcd;
+    transform: scale(1.1); 
+    transition: background-color 1s ease, transform 0.3s ease; 
+}
+
+button:active {
+    background-color: #cdcdcd;
+}
+
+button.correcta {
+    background-color: #78ca67; 
+}
+
+button.incorrecta {
+    background-color: #ff7553 ; 
+}
+
+button.selected {
+    background-color: #7FFF7F;
+}
+
+.reiniciar-btn {
+    margin-top: 30px;
+    background-color: #FF7F7F;
+    color: #cdcdcd;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 3s ease;
+}
+
+.reiniciar-btn:hover {
+    background-color: #FFBFBF;
+}
+
+.reiniciar-btn:active {
+    background-color: #FFAFAF;
+}
+
+#puntaje {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.puntaje-container {
+    display: none;
+}

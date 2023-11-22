@@ -1,0 +1,85 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    user-select: none; 
+}
+.title, p, h2{
+    color: #dcdcdc;
+}  
+
+header {
+    text-align: center;
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+
+/* Estilos para la imagen de perfil */
+.perfil-img {
+    position: absolute;
+    top: 200px; /* Ajusta la posición vertical según sea necesario */
+    right: 50%vw; /* Ajusta la posición horizontal según sea necesario */
+    width: 309px; /* Ajusta el ancho de la imagen según tus preferencias */
+    height: 309px; /* Ajusta la altura automáticamente para mantener la proporción */
+    border: 2px solid #414344; /* Borde blanco alrededor de la imagen */
+    border-radius: 0%; /* Borde redondeado para la imagen circular */
+    z-index: 2; /* Coloca la imagen encima del texto */
+}
+
+/*Estilos para la imagen de perfil */
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 100%;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.iborrainputfile {
+	font-size:16px; 
+	font-weight:normal;
+	font-family: 'Lato';
+}
+
+/* style 2 */
+
+.inputfile-2 + label {
+    color:  rgba(119, 118, 255, 1);
+    border: 2px solid currentColor;
+}
+
+.inputfile-2:focus + label,
+.inputfile-2.has-focus + label,
+.inputfile-2 + label:hover {
+    color:  rgb(135, 119, 144);
+}
+
