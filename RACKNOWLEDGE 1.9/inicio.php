@@ -73,7 +73,7 @@ if ($resultado && mysqli_num_rows($resultado) > 0) {
         <div class="shadow move"></div>
         <div class="message">
             <h1 class="alert red">Error!</h1>
-            <p>Porfavor verifica que hayas escrito correctamente tu correo</p>
+            <p>Porfavor verifica que hayas escrito correctamente tu correo.</p>
         </div>
         <a href="inicio.html"><button class="button-box"><h1 class="red">Regresar</h1></button>
     </div>
@@ -81,4 +81,4 @@ if ($resultado && mysqli_num_rows($resultado) > 0) {
 }
 
 mysqli_close($mysqliConnect);
-?>
+?> 
