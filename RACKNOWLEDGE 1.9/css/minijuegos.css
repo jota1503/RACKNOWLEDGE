@@ -1,116 +1,133 @@
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
     font-style: normal;
     text-decoration: none;
     user-select: none; 
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: rgb(220, 220, 220);
-    border-radius: 100px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(60deg, rgba(119, 118, 255, 1) 0%, rgba(174, 44, 241, 1) 100%); 
-    border-radius: 100px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(60deg, rgba(119, 118, 255, 1) 0%, rgba(174, 44, 241, 1) 100%);
-}
-
-a:link {
-    color: #7776ff;
-}
-
-a:visited {
-    color: #ae2cf1;
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-.title, p, h2{
-    color: #dcdcdc;
-}  
-
-header {
-    text-align: center;
-    padding: 0rem 1rem 1rem 1rem;
-}
-
-main {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    padding: 2rem 2rem 2rem 2rem;
-}
-
-.juego {
-    width: 100%;
-    max-width: 400px; 
-    border: none;
-    border-radius: 10px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.2s, opacity 0.2s; 
-}
-
-.juego:hover {
-    transform: scale(1.05); 
-    opacity: 0.9; 
-}
-
-.juego1 {
-    background: linear-gradient(60deg, rgba(119, 118, 255, 1) 0%, rgba(174, 44, 241, 1) 100%);
-    color: #fff;
-}
-
-.juego2 {
-    background: linear-gradient(60deg, rgba(119, 118, 255, 1) 0%, rgba(174, 44, 241, 1) 100%);
-    color: #fff;
-}
-
-.juego3 {
-    background: linear-gradient(60deg, rgba(119, 118, 255, 1) 0%, rgba(174, 44, 241, 1) 100%);
-    color: #fff;
-}
-.juego4 {
-    background: linear-gradient(60deg, rgba(119, 118, 255, 1) 0%, rgba(174, 44, 241, 1) 100%);
-    color: #fff;
-    border-radius: 100%;
+  }
+   
+  body {
     position: relative;
-    width: 4%;
-    max-height: 4% !important;
-    height: auto;
-}
-
-.juego a {
-    color: inherit;
-    text-decoration: none;
-}
-
-footer {
-    color: #fff;
+    top: 120px;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .boton{
+  width: 28px;  
+  height: 28px;
+  border-radius: 20px;
+  margin: 20px;
+  border: none;
+  padding: 6px 6px 6px 4px;
+  background: linear-gradient(60deg, rgba(119,118,255,1) 0%, rgba(174,44,241,1) 100%);
+  }
+  
+  .wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+  }
+  .wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
     text-align: center;
-    padding: 1rem;
-}
-
-.boton {
-    width: 28px;
-    height: 28px;
-    border-radius: 20px;
-    margin: 20px;
-    border: none;
-    padding: 6px 6px 6px 4px;
-    background: linear-gradient(60deg, rgba(119, 118, 255, 1) 0%, rgba(174, 44, 241, 1) 100%);
-} 
-
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: -22px;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 342px;
+    list-style: none;
+    background: #e0e0e0;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+  .carousel .card .img {
+    background: linear-gradient(60deg,rgba(119, 118, 255, 1) 0%,rgba(174, 44, 241, 1) 100%);
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+  }
+  .card .img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    position: relative;
+    top: 2px;
+  }
+  .carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+  }
+  .carousel .card span {
+    color: #6A6D78;
+    font-size: 1.31rem;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .wrapper .carousel {
+      grid-auto-columns: 100%;
+    }
+  }
