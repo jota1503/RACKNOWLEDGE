@@ -17,7 +17,7 @@
     referrerpolicy="no-referrer"
   />
   <style>
-    body {
+   body.Bright-mode {
       background-color: #d2d2d2;
       background: linear-gradient(60deg, #8b40e5 30%, #ffffff 100%);
       background-repeat: no-repeat;
@@ -27,7 +27,7 @@
       transition: background-color 0.5s, color 0.5s;
 }
 
-  body.dark-mode {
+body {
     background: rgb(65, 67, 68);
     background: linear-gradient(60deg,rgba(65, 67, 68, 1) 0%,rgba(30, 30, 30, 1) 100%);
     background-repeat: no-repeat;
@@ -62,6 +62,8 @@
       <button class="btn_mini" onclick="cargarMinijuegos()">Minijuegos</button><br/>
       <button class="btn_mini" onclick="cargarEvaluaciones()">Evaluaciones</button><br/>
       <button class="btn_config" onclick="cargarConfiguracion()">Configuraciones</a></button><br/>
+      <button class="btn_crud" onclick="cargarCrud()">Usuarios</button><br>
+      <button class="btn_crud" onclick="cargarCruddato()">Añadir dato curioson</button><br>
       <button class="btn_salir"><a href="inicio.html">Salir</a></button>
       <div class="logo_op">
       <img src="img/Logo.png" class="logo ftb" onclick="cargarFutbol()"></a>
@@ -108,6 +110,14 @@ function loadImageFromLocalStorage() {
        var iframe = document.getElementById("iframeContenido");
        iframe.src = "Configuracion.html";
    }
+   function cargarCrud() {
+       var iframe = document.getElementById("iframeContenido");
+       iframe.src = "crud2/index2.php";
+   }
+   function cargarCruddato() {
+       var iframe = document.getElementById("iframeContenido");
+       iframe.src = "crud_temas/app/datos/index.php";
+   }
    function cargarFutbol() {
        var iframe = document.getElementById("iframeContenido");
        iframe.src = "https://librefutboltv.com/";
@@ -115,17 +125,18 @@ function loadImageFromLocalStorage() {
    const checkbox = document.getElementById('check');
 
        checkbox.addEventListener('change', function() {
-           document.body.classList.toggle('dark-mode');
+           document.body.classList.toggle('Bright-mode');
        });
 </script>
+
 
 </body>
 <footer>
   <div class="footerContainer">
     <div class="socialIcons">
-      <a href="https://www.facebook.com/profile.php?id=100094927515340"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.instagram.com/racknowledge_/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
-      <a href="ttps://twitter.com/Racknowled_"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100094927515340" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/racknowledge_/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://twitter.com/Racknowled_" target="_blank"><i class="fa-brands fa-twitter"></i></a>
     </div>
     <div class="footerNav">
       <ul>

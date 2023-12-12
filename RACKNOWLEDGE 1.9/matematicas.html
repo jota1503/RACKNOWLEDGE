@@ -1,59 +1,177 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datos Curiosos</title>
-    <link rel="stylesheet" href="css/curioso.css">
-    <link rel="stylesheet" href="css/footer.css" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"/>
-</head>
-<body>
-    <a href="datoscuriosos.html"><img src="img/btn_regreso.png" class="btn_regreso"/></a>
-    <div class="header">
-        <header>
-            <h1>Matematicas</h1>
-        </header>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="heading-section">
-                <h1><span>Despierta tu curiosidad</span></h1>
-                <p>En este apartado vas a encontrar diferentes datos interesantes y llamativos de la asignatura Matematicas.</p>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Matemáticas</title>
+        <link rel="stylesheet" href="css/curioso.css">
+        <style>
+            body {
+                font-family: 'Segoe UI', sans-serif;
+                margin: 0px;
+                background-color: #525252;
+                box-sizing: border-box;
+                color: #fff;
+                flex-direction: column; /* Añadida propiedad para centrar contenido */
+        align-items: center; /* Añadida propiedad para centrar contenido */
+        justify-content: center;
+            }
+
+            .btn_regreso {
+                width: 28px;
+                height: 28px;
+                border-radius: 20px;
+                margin: 0px;
+                border: none;
+                padding: 6px 6px 6px 4px;
+                background: linear-gradient(60deg, rgba(119, 118, 255, 1) 0%, rgba(174, 44, 241, 1) 100%);
+                justify-content: left !important;
+            }
+
+            .header {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            header {
+                background: linear-gradient(60deg, rgba(119, 118, 255, 1) 0%, rgba(174, 44, 241, 1) 100%);
+                color: #fff;
+                text-align: center;
+                padding: 6px 6px 11px 6px;
+                border: none;
+                border-radius: 10px;
+                margin: 16px 0px 0px 0px;
+                width: 80%;
+            }
+
+            .container {
+        width: 80%; /* Modificado el ancho del contenedor */
+        max-width: 1200px; /* Añadida propiedad para limitar el ancho del contenedor */
+        margin: auto;
+        text-align: center; /* Añadida propiedad para centrar texto */
+    }
+
+            .container .row {
+                width: 80%;
+                margin: auto;
+            }
+
+            .container .row .heading-section {
+                width: 60%;
+                text-align: center;
+                margin: auto;
+            }
+
+            .container .row .heading-section h1 {
+        padding-top: 30px;
+        font-size: 48px; /* Modificado el tamaño de la fuente */
+        color: #ffcc00;
+    }
+
+            .container .row .heading-section span {
+                color: rgb(175, 44, 241);
+            }
+
+            .container .row .heading-section p {
+                margin-top: 15px;
+                color: #fff;
+                font-size: 17px;
+                line-height: 1.5;
+            }
+
+            .content-section {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin: auto;
+                flex-wrap: wrap;
+            }
+
+            .content-section .card {
+                flex-basis: calc(33.33% - 40px);
+                margin: 15px;
+            }
+
+            .content-section .card img {
+                width: 350px;
+                height: 240px;
+            }
+
+            .content-section .card h4 {
+                margin-top: 20px;
+                color: #ff9900;
+            }
+
+            .content-section .card p {
+                font-size: 15px;
+                margin-top: 10px;
+                color: #999;
+                line-height: 1.5;
+                text-align: justify;
+            }
+
+            @media screen and (max-width: 768px) {
+                .container .row .heading-section {
+                    width: 100%;
+                }
+
+                .content-section .card {
+                    flex-basis: 45%;
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+                .container .row .heading-section h1 {
+                    font-size: 36px;
+                }
+
+                .content-section .card {
+                    flex-basis: 100%;
+                }
+            }
+
+            ::-webkit-scrollbar {
+                width: 9px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: white;
+                border-radius: 10px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: linear-gradient(60deg, rgba(119, 118, 255, 1) 0%, rgba(174, 44, 241, 1) 100%);
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="datoscuriosos.html"><img src="img/btn_regreso.png" class="btn_regreso"/></a>
+        <div class="header">
+            <header>
+                <h1>Matemáticas</h1>
+            </header>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="heading-section">
+                    <div id="tablaRegistros"></div>
+                </div>
             </div>
-            <div class="content-section">
-                <div class="card">
-                    <img src="https://www.mentesliberadas.com/wp-content/uploads/2013/02/dantzig-1-1024x723.jpg">
-                    <h4>Estudiante de Berkeley con los famosos teoremas imposibles</h4>
-                    <p>Un estudiante de posgrado en la universidad de Berkeley llegó tarde a la clase de 
-                        estadística un día de 1939. En su apuro, copió dos problemas de la pizarra que, 
-                        pensó, serían deberes. A los pocos días los entregó al profesor disculpándose 
-                        por la tardanza, ya que le habían resultado más difíciles de lo habitual. 
-                        Esos deberes eran en realidad dos famosos teoremas que hasta entonces nadie
-                        había probado.</p>
-                </div>
-                <div class="card">
-                    <img src="https://porsitevale.files.wordpress.com/2022/03/happy-pi-day.jpg?w=1200&h=">
-                    <h4>El dia conmemorativo de PI</h4>
-                    <p>El día de Pi o de la Aproximación de Pi es un día en honor a la expresión matemática
-                    Pi (3,1415926). Este día fue elegido de acuerdo al formato de fecha americano 
-                    (mes/día), es decir, se celebra el 14 de marzo de cada año, en concreto, y para
-                    ser más exactos, a las 1:59 am.</p>
-                </div>
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0_Keyf2HGa2J-lVlJ9audYpjc7IYWIOCjDkcVhq-UjiEbvs7Gui2yIh1jDI7CXFr1joE&usqp=CAU">
-                    <h4>Invencion del =</h4>
-                    <p>Hace más de 400 años el matemático inglés Robert Recorde inventó las dos rayas
-                    = que utilizamos en cualquier operación, para indicar igualdad porque “dos 
-                    cosas no pueden ser más iguales que dos rectas paralelas”</p>
-                </div>
-            </div>
-                </div>
-            </div>
-</body>
-</html>
+        </div>
+
+        <script>
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("tablaRegistros").innerHTML = this.responseText;
+                }
+            };
+            xhr.open("GET", "matematicas.php", true);
+            xhr.send();
+        </script>
+    </body>
+    </html>

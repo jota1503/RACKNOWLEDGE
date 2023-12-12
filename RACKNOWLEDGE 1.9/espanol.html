@@ -3,86 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datos Curiosos</title>
+    <title>Matemáticas</title>
     <link rel="stylesheet" href="css/curioso.css">
-    <link rel="stylesheet" href="css/footer.css" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"/>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0px;
+            background-color: #525252;
+            box-sizing: border-box;
+            color: #fff;
+            flex-direction: column; /* Añadida propiedad para centrar contenido */
+    align-items: center; /* Añadida propiedad para centrar contenido */
+    justify-content: center;
+        }
+
+        .btn_regreso {
+            width: 28px;
+            height: 28px;
+            border-radius: 20px;
+            margin: 0px;
+            border: none;
+            padding: 6px 6px 6px 4px;
+            background: linear-gradient(60deg, rgba(119, 118, 255, 1) 0%, rgba(174, 44, 241, 1) 100%);
+            justify-content: left !important;
+        }
+
+        .header {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(60deg, rgba(119, 118, 255, 1) 0%, rgba(174, 44, 241, 1) 100%);
+            color: #fff;
+            text-align: center;
+            padding: 6px 6px 11px 6px;
+            border: none;
+            border-radius: 10px;
+            margin: 16px 0px 0px 0px;
+            width: 80%;
+        }
+
+        .container {
+    width: 80%; /* Modificado el ancho del contenedor */
+    max-width: 1200px; /* Añadida propiedad para limitar el ancho del contenedor */
+    margin: auto;
+    text-align: center; /* Añadida propiedad para centrar texto */
+}
+
+        .container .row {
+            width: 80%;
+            margin: auto;
+        }
+
+        .container .row .heading-section {
+            width: 60%;
+            text-align: center;
+            margin: auto;
+        }
+
+        .container .row .heading-section h1 {
+    padding-top: 30px;
+    font-size: 48px; /* Modificado el tamaño de la fuente */
+    color: #ffcc00;
+}
+
+        .container .row .heading-section span {
+            color: rgb(175, 44, 241);
+        }
+
+        .container .row .heading-section p {
+            margin-top: 15px;
+            color: #fff;
+            font-size: 17px;
+            line-height: 1.5;
+        }
+
+        .content-section {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        .content-section .card {
+            flex-basis: calc(33.33% - 40px);
+            margin: 15px;
+        }
+
+        .content-section .card img {
+            width: 350px;
+            height: 240px;
+        }
+
+        .content-section .card h4 {
+            margin-top: 20px;
+            color: #ff9900;
+        }
+
+        .content-section .card p {
+            font-size: 15px;
+            margin-top: 10px;
+            color: #999;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container .row .heading-section {
+                width: 100%;
+            }
+
+            .content-section .card {
+                flex-basis: 45%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .container .row .heading-section h1 {
+                font-size: 36px;
+            }
+
+            .content-section .card {
+                flex-basis: 100%;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 9px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: white;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(60deg, rgba(119, 118, 255, 1) 0%, rgba(174, 44, 241, 1) 100%);
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <a href="datoscuriosos.html"><img src="img/btn_regreso.png" class="btn_regreso"/></a>
     <div class="header">
         <header>
-            <h1>Español</h1>
+            <h1>Espanol</h1>
         </header>
     </div>
     <div class="container">
         <div class="row">
             <div class="heading-section">
-                <h1><span>Despierta tu curiosidad</span></h1>
-                <p>En este apartado vas a encontrar diferentes datos interesantes y llamativos de la asignatura español.</p>
-            </div>
-            <div class="content-section">
-                <div class="card">
-                    <img src="https://web.archive.org/web/20161011201205if_/http://static.panoramio.com/photos/large/6602070.jpg">
-                    <h4>San Pastor en La Rozuela (León), fue el autor del primer texto escrito en español.</h4>
-                    <p>En los años 974-978 (aún se discute sobre la fecha exacta), un monje del Monasterio
-                    de San Justo y San Pastor en La Rozuela (León), fue el autor del primer texto
-                    escrito en español. La curiosidad del texto es que no se trataba del escribano
-                    del Monasterio, que contase la vida de los monjes, sino que hizo «una lista
-                    de gastos de la cocina», por decirlo de alguna forma resumida. El texto fue
-                    denominado Nodicia de Kesos, y es que ahí enumeraba, cómo se habían ido 
-                    gastando los quesos de aquel monasterio.</p>
-                </div>
-                <div class="card">
-                    <img src="https://www.mundoprimaria.com/wp-content/uploads/2021/08/los-continentes-en-primaria.jpg">
-                    <h4>El español se habla en los cinco continentes</h4>
-                    <p>Contrario a lo que muchos puedan pensar, el idioma español se habla en todos los 
-                    continentes, no solo en América y Europa. Por ejemplo, en África se habla en dos
-                    países: Marruecos y Guinea Ecuatorial. Mientras que en Asia es comúnmente hablado
-                    en Filipinas. Por su parte, en Oceanía se habla español en la Isla de Pascua.</p>
-                </div>
-                <div class="card">
-                    <img src="https://humanidades.com/wp-content/uploads/2016/09/renacimiento-2-e1560120939854.jpg">
-                    <h4>¿Qué fue el Renacimiento?</h4>
-                    <p>El Renacimiento es un fenómeno cultural que retoma los principios de la antigüedad
-                    clásica y los actualiza a través del humanismo. El humanismo es pues, el movimiento
-                    intelectual del Renacimiento que enlaza la cultura de la época con la antigüedad 
-                    clásica, es el aspecto filosófico y cultural del Renacimiento.</p>
-                </div>
-            </div>
-            <div class="content-section">
-                <div class="card">
-                    <img src="https://humanidades.com/wp-content/uploads/2018/10/descubrimiento-de-Am%C3%A9rica-3-e1582748979129.jpg">
-                    <h4>Descubrimiento de América</h4>
-                    <p>El 12 de octubre de 1492 un grupo de españoles liderados por el italiano Cristóbal
-                    Colón llegó a una isla llamada Guanahaní después de cruzar el océano Atlántico.
-                    Aunque ellos pensaron que estaban en las Indias (en Asia), en realidad habían
-                    descubierto un nuevo continente: América.</p>
-                </div>
-                <div class="card">
-                    <img src="https://i0.wp.com/cms.babbel.news/wp-content/uploads/2017/09/700x394-20170828065626.jpg?resize=1200,630">
-                    <h4>Historia del Español</h4>
-                    <p>El español es una lengua romance, derivada del latín vulgar, que pertenece a la
-                    subfamilia itálica dentro del conjunto indoeuropeo. Es la principal lengua en 
-                    España y 19 países americanos, y es oficial también en Guinea Ecuatorial. Es 
-                    también llamada castellano por tener su origen en el reino medieval de Castilla.</p>
-                </div>
-                <div class="card">
-                    <img src="https://www.unotv.com/uploads/2022/09/che-ll-165208.jpg">
-                    <h4>Las letras «ch» y «ll» no existen</h4>
-                    <p>Tras el Congreso de la Asociación de Academias de la Lengua Española en 1994, las letras
-                     «ch» y «ll» fueron eliminadas del alfabeto. Actualmente, son consideradas dígrafos; 
-                     es decir, grupos de dos letras que representan un único fonema. Ahora bien, la 
-                     eliminación de estos dígrafos del abecedario no supone, en ningún caso, que 
-                     desaparezcan del sistema gráfico del español.</p>
-                </div>
+                <div id="tablaRegistros"></div>
             </div>
         </div>
     </div>
+
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("tablaRegistros").innerHTML = this.responseText;
+            }
+        };
+        xhr.open("GET", "espanol.php", true);
+        xhr.send();
+    </script>
 </body>
 </html>

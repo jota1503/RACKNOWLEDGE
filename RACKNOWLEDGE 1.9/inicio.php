@@ -3,7 +3,7 @@
 <?php
 session_start();
 
-$mysqliConnect = new mysqli('localhost', 'root', '', 'registro');
+$mysqliConnect = new mysqli('localhost', 'root', '', 'racknowledge');
 if (!$mysqliConnect) {
     echo "Error al conectar a la base de datos";
 }
