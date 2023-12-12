@@ -24,7 +24,6 @@ require 'crud_temas/app/config/database.php';
                 while ($row = $result->fetch_assoc()) {
                     echo '<div style="text-align: center;">';
                     echo '<h2 style="font-size: 24px; font-family: Arial, sans-serif;">' . $row['nombre'] . '</h2>';
-                    echo '<p><p><p>' . $row['imagen'] . '</p>';
                     echo '<p><p><p>' . $row['descripcion'] . '</p>';
                     echo '</div>';
                 }
