@@ -1,37 +1,54 @@
+aca ta el inicio.html
+
 <html lang="en">
-    <head>
-        <title>RACKNOWLEDGE</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/inicio.css" rel="stylesheet">
-        <link rel="shortcut icon" href="img/Logo.ico">
-    </head>
+<head>
+    <title>RACKNOWLEDGE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/inicio.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/Logo.ico">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function validarFormulario() {
+            var email = document.getElementById('email').value;
+            var pass = document.getElementById('pass').value;
+            var recaptchaResponse = grecaptcha.getResponse();
+
+            if (email.trim() === '' || pass.trim() === '' || recaptchaResponse === '') {
+                alert('Por favor, completa todos los campos y verifica el reCAPTCHA.');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-        <div class="box grid">
-            <div class="img-fluid bglogo item1"><img src="img/Logo.png" class="img-fluid logo"/></div>
-            <div class="inicio  item2">
-                <h1 class="ini">Iniciar Sesión</h1><br>
-                <form method="post" action="inicio.php">
-                    <div class="grid_inicio">
-                        <div><input type="email" name="email" id="email" class="form-control email" placeholder="Correo"/><br/></div>                
-                        <div><input type="password" name="pass" id="pass" class="form-control pass" placeholder="Contraseña"/><br/></div>
+    <div class="box grid">
+        <div class="img-fluid bglogo item1"><img src="img/Logo.png" class="img-fluid logo"/></div>
+        <div class="inicio  item2">
+            <h1 class="ini">Iniciar Sesión</h1><br>
+            <form method="post" action="inicio.php" onsubmit="return validarFormulario()">
+                <div class="grid_inicio">
+                    <div><input type="email" name="email" id="email" class="form-control email" placeholder="Correo"/><br/></div>                
+                    <div><input type="password" name="pass" id="pass" class="form-control pass" placeholder="Contraseña"/><br/></div>
+                    <div>
                         <div>
-                            <div class="btn_ent">
-                                <button class="btn_entrar" id="btn_entrar"><a>ENTRAR</a></button><br/>
-                            </div>
+                            <div class="g-recaptcha" data-sitekey="6LdNQBopAAAAAODsB5_zUOBniJOds8L1QP8lbo65"></div>
                         </div>
-                        <div><span class="pass_olv"><a href="presentacion.html" class="con">Conocenos mas</a></span><br/></div>
-                        <div><p class="reg">Si aún no tienes cuenta <a href="registro.html">Registrate acá</a></p><br/></div>
+
+                        <div class="btn_ent">
+                            <button type="submit" class="btn_entrar"><a>ENTRAR</a></button><br/>
+                        </div>
                     </div>
-                </form>     
-            </div>
+                    <div><span class="pass_olv"><a href="presentacion.html" class="con">Conocenos mas</a></span><br/></div>
+                    <div><p class="reg">Si aún no tienes cuenta <a href="registro.html">Regístrate acá</a></p><br/></div>
+                </div>
+            </form>     
         </div>
+    </div>
 </body>
-
-</html>
-</body>
-
 </html>
