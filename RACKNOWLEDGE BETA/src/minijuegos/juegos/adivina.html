@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/adivina.css" />
+    <link rel="stylesheet" href="../../output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body class="m-0 overflow-y-hidden p-0 py-[7px]">
+    <div class="h-screen">
+      <div>
+        <a href="../carrusel_minijuegos.html"
+          ><i
+            class="fi fi-br-angle-left rounded-full bg-gradient-to-r from-Light-Blue to-Fucsia p-2 pb-[5px] pr-[9px]"
+          ></i
+        ></a>
+      </div>
+
+      <div class="grid h-full place-content-center">
+        <div class="text-center">
+          <section class="">
+            <h2>Adivina la palabra</h2>
+            <div id="palabra">
+              <div class="letra pintar">G</div>
+              <div class="letra">U</div>
+              <div class="letra">I</div>
+              <div class="letra">T</div>
+              <div class="letra">A</div>
+              <div class="letra">R</div>
+              <div class="letra">R</div>
+              <div class="letra">A</div>
+            </div>
+            <h3>Pista: <span id="ayuda"> Instrumento Musical</span></h3>
+            <h3>Intentos que te faltan: <span id="intentos">5</span></h3>
+            <h3>
+              Estas son las letras que llevas:
+              <span id="letrasIngresadas"></span>
+            </h3>
+
+            <button
+              onclick="cargarNuevaPalabra()"
+              class="bg-gradient-to-r from-Light-Blue to-Fucsia p-2 text-white"
+            >
+              Nueva Palabra
+            </button>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="./js/adivina.js"></script>
+  </body>
+</html>

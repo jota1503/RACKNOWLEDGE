@@ -1,0 +1,70 @@
+body {
+  background-image: none !important;
+}
+
+section {
+  width: 400px;
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#palabra {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.letra {
+  height: 50px;
+  width: 50px;
+  border: 2px solid #ccc;
+  text-align: center;
+  margin: 4px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.pintar {
+  background-color: #02bfa4;
+  color: #fff;
+}
+
+.pintarError {
+  background-color: red;
+  color: #fff;
+}
+
+h3 {
+  margin: 4px 0;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+h3 span {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+button {
+  width: 140px;
+  margin: 20px auto 0;
+  background-color: #02bfa4;
+  border: none;
+  border-radius: 18px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}

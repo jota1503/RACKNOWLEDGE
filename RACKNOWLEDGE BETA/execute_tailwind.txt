@@ -1,0 +1,5 @@
+- Ejecutar tailwind
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+- Ejecutar prettier
+npx prettier --write src/test.html
