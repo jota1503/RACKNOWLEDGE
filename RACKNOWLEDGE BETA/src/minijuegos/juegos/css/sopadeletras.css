@@ -1,0 +1,164 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  background-image: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    60deg,
+    rgba(119, 118, 255, 1) 0%,
+    rgba(174, 44, 241, 1) 100%
+  );
+  border-radius: 10px;
+}
+
+.item1 {
+  margin: auto auto auto auto;
+}
+
+.item2 {
+  margin: 30px auto;
+}
+
+.box {
+  padding: 0% 16%;
+  min-width: 62%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.btn_regreso {
+  width: 20px;
+  height: 17px;
+  border-radius: 100%;
+  margin: 0px;
+  border: none;
+  padding: 6px 6px 6px 4px;
+  background: linear-gradient(
+    60deg,
+    rgba(119, 118, 255, 1) 0%,
+    rgba(174, 44, 241, 1) 100%
+  );
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin: 20px;
+}
+
+#juego {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 500px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#juego .puzzleSquare {
+  height: 30px;
+  width: 30px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  line-height: 30px;
+  text-align: center;
+  user-select: none;
+  transition: transform 0.2s;
+  border-radius: 2px;
+}
+
+#juego .selected {
+  background-color: #af2cf1;
+  transform: scale(1.2);
+}
+
+#juego .found {
+  background-color: rgba(119, 118, 255, 1);
+  color: #fff;
+}
+
+#juego .solved {
+  background-color: #ff4500;
+  border-radius: 100%;
+  color: #fff;
+}
+
+#juego .complete {
+  background-color: #32cd32;
+}
+
+#Palabras {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 600px;
+}
+
+#Palabras ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#Palabras li {
+  border: 2px solid
+    linear-gradient(
+      60deg,
+      rgba(119, 118, 255, 1) 0%,
+      rgba(174, 44, 241, 1) 100%
+    );
+  padding: 5px 15px;
+  font-size: 1em;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #ffffffd5;
+  color: #232323;
+}
+
+#Palabras .wordFound {
+  text-decoration: line-through;
+  text-decoration-color: rgba(119, 118, 255, 1);
+  color: #ccc;
+}
+
+#solve {
+  display: block;
+  margin: 0px auto;
+  padding: 18px 20px;
+  font-size: 18px;
+  background: linear-gradient(
+    60deg,
+    rgba(119, 118, 255, 1) 0%,
+    rgba(174, 44, 241, 1) 100%
+  );
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  margin: 20px auto;
+}
+
+#solve:hover {
+  background-color: #ff6347;
+}

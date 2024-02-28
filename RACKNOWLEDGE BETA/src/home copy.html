@@ -1,0 +1,229 @@
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="shortcut icon" href="./img/logos/Logo.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css"
+    />
+    <title>RACKNOWLEDGE</title>
+    <script src="./js/darkmode.js"></script>
+  </head>
+
+  <body class="h-full from-Cursed-Black to-Caviar dark:bg-gradient-to-r">
+    <div class="wrapper mx-auto h-full p-4">
+      <div class="grid-cols-home h-full w-full" id="">
+        <!-- Sidebar -->
+        <div
+          class="min-h-full overflow-y-hidden rounded-lg bg-slate-200 p-[18px] dark:bg-[#333333] S3:rounded-lg"
+        >
+          <div class="">
+            <div class="grid-rows-sidebar h-full">
+              <!-- User -->
+              <div
+                class="grid-rows-user rounded-lg bg-[#d6dee7] p-3 dark:bg-[#27282be8] S3:rounded-lg"
+              >
+                <!-- Info User -->
+                <div class="grid-cols-inf_usr">
+                  <div>
+                    <img
+                      src="./img/user.png"
+                      alt=""
+                      class="h-20 w-20 rounded-full"
+                      id="imagenPerfil"
+                    />
+                  </div>
+                  <div class="m-0 grid place-content-center px-3 text-center">
+                    <span class="text-lg dark:text-[#dfe4ebef] S3:text-xl" id=""
+                      >User_Name</span
+                    >
+                  </div>
+                </div>
+                <!-- Status User -->
+                <div class="grid grid-rows-2 gap-2">
+                  <!-- About Me -->
+                  <div
+                    class="rounded-lg bg-gradient-to-t from-Light-Blue to-Fucsia p-[2px]"
+                  >
+                    <div
+                      class="flex h-full w-full justify-center rounded-lg bg-[#dfe4eb] p-2 dark:bg-[#242528] dark:text-[#dfe4ebef]"
+                    >
+                      <span
+                        class="text-sm text-[#000000]/[0.85] dark:text-[#DFE4EBEF]/[0.85]"
+                        >Sobre Mi...</span
+                      >
+                    </div>
+                  </div>
+
+                  <!-- Role -->
+                  <div
+                    class="rounded-lg bg-gradient-to-b from-Light-Blue to-Fucsia p-[2px]"
+                  >
+                    <div
+                      class="flex w-full justify-center rounded-lg bg-[#dfe4eb] p-2 dark:bg-[#242528] dark:text-[#dfe4ebef]"
+                    >
+                      <div class="grid grid-rows-2 text-center">
+                        <div>
+                          <span
+                            class="text-sm text-[#000000]/[0.85] dark:text-[#DFE4EBEF]/[0.85]"
+                            >Rol:</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="text-base font-medium uppercase text-[#000000]/[0.85] dark:text-[#DFE4EBEF]/[0.85]"
+                            >...</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Buttons -->
+              <div>
+                <div class="grid grid-rows-5 gap-4">
+                  <div>
+                    <button
+                      class="h-11 w-full rounded-lg bg-[#d6dee7] text-lg ring-offset-[#d6dee7] hover:bg-slate-100 hover:ring-2 hover:ring-Light-Blue hover:ring-offset-2 dark:bg-[#27282be8] dark:text-[#dfe4ebef] dark:ring-offset-[#242528] dark:hover:bg-[#242528]"
+                      onclick="cargarDatosCuriosos()"
+                    >
+                      Temas
+                    </button>
+                  </div>
+                  <div>
+                    <button
+                      class="h-11 w-full rounded-lg bg-[#d6dee7] text-lg ring-offset-[#d6dee7] hover:bg-slate-100 hover:ring-2 hover:ring-Light-Blue hover:ring-offset-2 dark:bg-[#27282be8] dark:text-[#dfe4ebef] dark:ring-offset-[#242528] dark:hover:bg-[#242528]"
+                      onclick="cargarMinijuegos()"
+                    >
+                      Minijuegos
+                    </button>
+                  </div>
+                  <div>
+                    <button
+                      class="h-11 w-full rounded-lg bg-[#d6dee7] text-lg ring-offset-[#d6dee7] hover:bg-slate-100 hover:ring-2 hover:ring-Light-Blue hover:ring-offset-2 dark:bg-[#27282be8] dark:text-[#dfe4ebef] dark:ring-offset-[#242528] dark:hover:bg-[#242528]"
+                      onclick="cargarEvaluaciones()"
+                    >
+                      Evaluaciones
+                    </button>
+                  </div>
+                  <div>
+                    <button
+                      class="h-11 w-full rounded-lg bg-[#d6dee7] text-lg ring-offset-[#d6dee7] hover:bg-slate-100 hover:ring-2 hover:ring-Light-Blue hover:ring-offset-2 dark:bg-[#27282be8] dark:text-[#dfe4ebef] dark:ring-offset-[#242528] dark:hover:bg-[#242528]"
+                      onclick="cargarConfiguracion()"
+                    >
+                      Configuraciones
+                    </button>
+                  </div>
+                  <div>
+                    <a href="./inicio.html">
+                      <button
+                        class="h-11 w-full rounded-lg bg-[#d6dee7] text-lg ring-offset-[#d6dee7] hover:bg-slate-100 hover:ring-2 hover:ring-Light-Blue hover:ring-offset-2 dark:bg-[#27282be8] dark:text-[#dfe4ebef] dark:ring-offset-[#242528] dark:hover:bg-[#242528]"
+                      >
+                        Salir
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content Area -->
+        <div
+          class="min-h-full overflow-y-hidden rounded-lg bg-slate-200 p-[18px] dark:bg-[#333333] S3:rounded-lg"
+        >
+          <!-- CONTENT -->
+          <div class="contenido">
+            <div class="iframe-container">
+              <iframe id="iframeContenido" src="" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- SCRIPTS -->
+
+  <!-- CARGAR INFRAMES -->
+  <script>
+    function cargarDatosCuriosos() {
+      var iframe = document.getElementById("iframeContenido");
+      iframe.src = "./datos_curiosos/datos_carrusel.html";
+    }
+    function cargarMinijuegos() {
+      var iframe = document.getElementById("iframeContenido");
+      iframe.src = "./minijuegos/carrusel_minijuegos.html";
+    }
+    function cargarEvaluaciones() {
+      var iframe = document.getElementById("iframeContenido");
+      iframe.src = "./evaluaciones/eval_carrusel.html";
+    }
+    function cargarConfiguracion() {
+      var iframe = document.getElementById("iframeContenido");
+      iframe.src = "./configuracion/configuracion.html";
+    }
+  </script>
+
+  <!-- CARGAR FOTO DE PERFIL -->
+  <script>
+    // Función para leer la imagen del localStorage y asignarla a la etiqueta de imagen
+    function loadImageFromLocalStorage() {
+      const savedImage = localStorage.getItem("imagenPerfil");
+      if (savedImage) {
+        imagenPerfil.src = savedImage;
+      }
+    }
+    // Función para eliminar la imagen del localStorage
+    function removeImageFromLocalStorage() {
+      localStorage.removeItem("imagenPerfil");
+    }
+    // Leer la imagen del localStorage cuando la página se carga
+    window.addEventListener("load", loadImageFromLocalStorage);
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <div class="w-full p-8">
+      <div class="grid-footer">
+        <div class="flex justify-center">
+          <a
+            href="https://www.facebook.com/profile.php?id=100094927515340"
+            class="m-4"
+            ><i
+              class="fi fi-brands-facebook block rounded-full bg-gradient-to-t from-Light-Blue to-Fucsia p-2.5 text-[2rem] text-[#d6dee7]/[0.85] no-underline duration-300 hover:text-[#d6dee7] dark:text-[#242528] dark:hover:text-[#27282bf1]"
+            ></i
+          ></a>
+          <a
+            href="https://www.instagram.com/racknowledge_/?next=%2F"
+            class="m-4"
+            ><i
+              class="fi fi-brands-instagram block rounded-full bg-gradient-to-t from-Light-Blue to-Fucsia p-2.5 text-[2rem] text-[#d6dee7]/[0.85] no-underline duration-300 hover:text-[#d6dee7] dark:text-[#242528] dark:hover:text-[#27282bf1]"
+            ></i
+          ></a>
+          <a href="https://twitter.com/Racknowled_" class="m-4"
+            ><i
+              class="fi fi-brands-twitter-alt-circle block rounded-full bg-gradient-to-t from-Light-Blue to-Fucsia p-2.5 text-[2rem] text-[#d6dee7]/[0.85] no-underline duration-300 hover:text-[#d6dee7] dark:text-[#242528] dark:hover:text-[#27282bf1]"
+            ></i
+          ></a>
+        </div>
+        <div class="flex justify-center">
+          <a
+            href="proceso.html"
+            class="text-lg opacity-80 dark:text-[#d6dee7]/80"
+            >Soporte Tecnico</a
+          >
+        </div>
+        <div class="flex justify-center">
+          <span class="text-sm opacity-80 dark:text-[#d6dee7]/80"
+            >Copyright &copy;2023; Designed by TEAM RACKNOWLEDGE</span
+          >
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
