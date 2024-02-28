@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sopa de letras</title>
+    <link rel="stylesheet" type="text/css" href="css/sopadeletras.css">
+    <script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+    <script type="text/javascript" src="js/wordfind.js"></script> 
+    <script type="text/javascript" src="js/wordfindgame.js"></script> 
+</head>
+<body>
+    <a href="minijuegos.html"><img src="img/btn_regreso.png" class="btn_regreso"/></a>
+    <div class="box grid">
+        <div class="item1" id='juego'></div>
+
+        <div class="item2" id='Palabras'></div>
+    </div>
+    
+    
+    <div><button id='solve'>Resolver el juego</button></div>
+    <script>
+    var words = ['Matematicas','Español','Ingles','Tecnologia','Biologia','Ed Fisica','Sociales','Artes'];
+    var gamePuzzle = wordfindgame.create(words, '#juego', '#Palabras'); 
+        
+    var puzzle = wordfind.newPuzzle(words,{height: 18, width:18, fillBlanks: false});
+    wordfind.print(puzzle);   
+        
+    $('#solve').click( function() {wordfindgame.solve(gamePuzzle, words);});
+    </script>
+</body>
+</html>

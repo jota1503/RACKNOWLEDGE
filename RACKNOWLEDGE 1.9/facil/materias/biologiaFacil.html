@@ -1,0 +1,189 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biologia</title>
+        <link rel="stylesheet" href="css\curioso.css">
+        <style>
+            body {
+                font-family: 'Segoe UI', sans-serif;
+                margin: 0px;
+                background-color: #525252;
+                box-sizing: border-box;
+                color: #fff;
+                flex-direction: column; /* Añadida propiedad para centrar contenido */
+        align-items: center; /* Añadida propiedad para centrar contenido */
+        justify-content: center;
+            }
+
+            .btn_regreso {
+                width: 28px;
+                height: 28px;body {
+    font-family: 'Segoe UI';
+    margin: 0px;
+    background-color: #525252;
+    box-sizing: border-box;
+                }
+}
+
+.btn_regreso{
+    width: 28px;
+    height: 28px;
+    border-radius: 20px;
+    margin: 0px;
+    border: none;
+    padding: 6px 6px 6px 4px;
+    background: linear-gradient(60deg, rgba(119,118,255,1) 0%, rgba(174,44,241,1) 100%);
+    justify-content: left !important;
+}
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(60deg, rgba(119, 118, 255, 1) 0%, rgba(174, 44, 241, 1) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 6px 6px 11px 6px;
+    border: none;
+    border-radius: 10px;
+    margin: 16px 0px 0px 0px;
+    width: 80%;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container .row {
+    width: 80%;
+    margin: auto;
+}
+
+.container .row .heading-section {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.container .row .heading-section h1 {
+    padding-top: 30px;
+    font-size: 42px;
+}
+
+.container .row .heading-section span {
+    color: rgb(175, 44, 241);
+}
+
+.container .row .heading-section p {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.content-section {
+    display: flex;
+    justify-content: flex-start; /* Alinear elementos al inicio del contenedor */
+    align-items: flex-start; /* Alinear elementos en la parte superior del contenedor */
+    margin: auto;
+    flex-wrap: wrap;
+}
+.content-section .card {
+    flex-basis: calc(33.33% - 40px); /* Ajustar el ancho para que haya tres elementos por fila */
+    margin: 15px;
+}
+.content-section .card img {
+    width: 350px;
+    height: 240px;
+}
+
+.content-section .card h4 {
+    margin-top: 20px;
+    color: rgba(174, 44, 241, 1);
+}
+
+.content-section .card p {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #fff;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Ajustar el diseño en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .container .row .heading-section {
+        width: 100%;
+    }
+
+    .content-section .card {
+        flex-basis: 45%; /* Reducir el tamaño de los elementos en pantallas medianas */
+    }
+}
+
+/* Ajustar el diseño en pantallas aún más pequeñas */
+@media screen and (max-width: 480px) {
+    .container .row .heading-section h1 {
+        font-size: 36px; /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+
+    .content-section .card {
+        flex-basis: 100%; /* Hacer que los elementos ocupen todo el ancho en pantallas pequeñas */
+    }
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(60deg, rgba(119,118,255,1) 0%, rgba(174,44,241,1) 100%); 
+    border-radius: 10px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <header>
+                <h1>Biologia</h1>
+            </header>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="heading-section">
+                    <h1><span>Explora el Mundo de la biologia con Nuestros Minijuegos</span></h1>
+                    <p> Sumérgete en la diversión biológica con nuestros minijuegos.</p>
+                </div>
+                <div class="content-section">
+                    <div class="card">
+                        <a href="#"></a><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHxtAWaicu5MyvcBM_6P47Q_CTeY-argDeWr76rfbbKVTaJYxY1PeRzN_wH6Egv9LZk9g" onclick="irAlJuegoDeLaVida()">
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                   
+                </div>
+                    </div>
+                </div>
+
+        <script>
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("tablaRegistros").innerHTML = this.responseText;
+                }
+            };
+            xhr.open("GET", "matematicas.php", true);
+            xhr.send();
+        </script>
+    </body>
+    </html>
