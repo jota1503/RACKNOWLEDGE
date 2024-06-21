@@ -1,0 +1,267 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="shortcut icon" href="./img/logos/Logo.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css"
+    />
+    <title>RACKNOWLEDGE</title>
+  </head>
+
+  <body class="h-full from-Cursed-Black to-Caviar dark:bg-gradient-to-r">
+    <div class="wrapper mx-auto h-full p-4">
+      <div class="grid-cols-home h-full w-full" id="">
+        <!-- Sidebar -->
+        <div
+          class="min-h-full overflow-y-hidden rounded-lg bg-slate-200 p-[18px] dark:bg-[#333333] S3:rounded-lg"
+        >
+          <div class="">
+            <div class="grid-rows-sidebar h-full">
+              <!-- User -->
+              <div
+                class="grid-rows-user rounded-lg bg-[#d6dee7] p-3 dark:bg-[#27282be8] S3:rounded-lg"
+              >
+                <!-- Info User -->
+                <div class="grid-cols-inf_usr">
+                  <div>
+                    <img
+                      src="./img/user.png"
+                      alt=""
+                      class="h-20 w-20 rounded-full object-cover"
+                      id="imagenPerfil"
+                    />
+                  </div>
+                  <div class="m-0 grid place-content-center px-3 text-center">
+                    <span class="text-lg dark:text-[#dfe4ebef] S3:text-xl" id=""
+                      >User_Name</span
+                    >
+                  </div>
+                </div>
+                <!-- Status User -->
+                <div class="grid grid-rows-2 gap-2">
+                  <!-- About Me -->
+                  <div
+                    class="rounded-lg bg-gradient-to-t from-Light-Blue to-Fucsia p-[2px]"
+                  >
+                    <div
+                      class="flex h-full w-full justify-center rounded-lg bg-[#dfe4eb] p-2 dark:bg-[#242528] dark:text-[#dfe4ebef]"
+                    >
+                      <span
+                        class="text-sm text-[#000000]/[0.85] dark:text-[#DFE4EBEF]/[0.85]"
+                        >Sobre Mi...</span
+                      >
+                    </div>
+                  </div>
+
+                  <!-- Role -->
+                  <div
+                    class="rounded-lg bg-gradient-to-b from-Light-Blue to-Fucsia p-[2px]"
+                  >
+                    <div
+                      class="flex w-full justify-center rounded-lg bg-[#dfe4eb] p-2 dark:bg-[#242528] dark:text-[#dfe4ebef]"
+                    >
+                      <div class="grid grid-rows-2 text-center">
+                        <div>
+                          <span
+                            class="text-sm text-[#000000]/[0.85] dark:text-[#DFE4EBEF]/[0.85]"
+                            >Rol:</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="text-base font-medium uppercase text-[#000000]/[0.85] dark:text-[#DFE4EBEF]/[0.85]"
+                            >Estudiante</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Buttons -->
+              <div>
+                <div class="grid grid-rows-5 gap-4">
+                  <!-- TEMAS -->
+                  <div>
+                    <button
+                      class="h-11 w-full rounded-lg bg-[#d6dee7] text-lg ring-offset-[#d6dee7] hover:bg-slate-100 hover:ring-2 hover:ring-Light-Blue hover:ring-offset-2 dark:bg-[#27282be8] dark:text-[#dfe4ebef] dark:ring-offset-[#242528] dark:hover:bg-[#242528]"
+                      onclick="cargarDatosCuriosos()"
+                    >
+                      Temas
+                    </button>
+                  </div>
+                  <!-- MINIJUEGOS -->
+                  <div>
+                    <button
+                      class="h-11 w-full rounded-lg bg-[#d6dee7] text-lg ring-offset-[#d6dee7] hover:bg-slate-100 hover:ring-2 hover:ring-Light-Blue hover:ring-offset-2 dark:bg-[#27282be8] dark:text-[#dfe4ebef] dark:ring-offset-[#242528] dark:hover:bg-[#242528]"
+                      onclick="cargarMinijuegos()"
+                    >
+                      Minijuegos
+                    </button>
+                  </div>
+                  <!-- EVALUACIONES -->
+                  <div>
+                    <button
+                      class="h-11 w-full rounded-lg bg-[#d6dee7] text-lg ring-offset-[#d6dee7] hover:bg-slate-100 hover:ring-2 hover:ring-Light-Blue hover:ring-offset-2 dark:bg-[#27282be8] dark:text-[#dfe4ebef] dark:ring-offset-[#242528] dark:hover:bg-[#242528]"
+                      onclick="cargarEvaluaciones()"
+                    >
+                      Evaluaciones
+                    </button>
+                  </div>
+                  <!-- CONFIGURACION -->
+                  <div>
+                    <button
+                      class="h-11 w-full rounded-lg bg-[#d6dee7] text-lg ring-offset-[#d6dee7] hover:bg-slate-100 hover:ring-2 hover:ring-Light-Blue hover:ring-offset-2 dark:bg-[#27282be8] dark:text-[#dfe4ebef] dark:ring-offset-[#242528] dark:hover:bg-[#242528]"
+                      onclick="cargarConfiguracion()"
+                    >
+                      Configuraciones
+                    </button>
+                  </div>
+                  <!-- SALIR -->
+                  <div>
+                    <button
+                      class="h-11 w-full rounded-lg bg-[#d6dee7] text-lg ring-offset-[#d6dee7] hover:bg-slate-100 hover:ring-2 hover:ring-Light-Blue hover:ring-offset-2 dark:bg-[#27282be8] dark:text-[#dfe4ebef] dark:ring-offset-[#242528] dark:hover:bg-[#242528]"
+                      onclick="salir()"
+                    >
+                      Salir
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content Area -->
+        <div
+          class="min-h-full overflow-y-hidden rounded-lg bg-slate-200 p-[18px] dark:bg-[#333333] S3:rounded-lg"
+        >
+          <!-- CONTENT -->
+          <div class="contenido">
+            <div class="iframe-container">
+              <iframe id="iframeContenido" src="" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- SCRIPTS -->
+
+  <!-- CARGAR INFRAMES -->
+  <script>
+    function cargarDatosCuriosos() {
+      var iframe = document.getElementById("iframeContenido");
+      iframe.src = "./vista_est/datos_curiosos/datos_carrusel.html";
+    }
+    function cargarMinijuegos() {
+      var iframe = document.getElementById("iframeContenido");
+      iframe.src = "./vista_est/minijuegos/carrusel_minijuegos.html";
+    }
+    function cargarEvaluaciones() {
+      var iframe = document.getElementById("iframeContenido");
+      iframe.src = "./vista_est/evaluaciones/eval_carrusel.html";
+    }
+    function cargarConfiguracion() {
+      var iframe = document.getElementById("iframeContenido");
+      iframe.src = "./cfg/cfg.html";
+    }
+  </script>
+
+  <!-- CARGAR FOTO DE PERFIL -->
+  <script>
+    function loadImageFromLocalStorage() {
+      const savedImage = localStorage.getItem("imagenPerfil");
+      if (savedImage) {
+        imagenPerfil.src = savedImage;
+      }
+    }
+    // Función para eliminar la imagen del localStorage
+    function removeImageFromLocalStorage() {
+      localStorage.removeItem("imagenPerfil");
+    }
+    // Leer la imagen del localStorage cuando la página se carga
+    window.addEventListener("load", loadImageFromLocalStorage);
+  </script>
+
+  <!-- OTROS -->
+  <script>
+    function salir() {
+      window.location.href = "./inicio.html";
+    }
+
+    function team_rack() {
+      window.location.href = "./otros/presentacion.html"; // URL de la página a la que quieres redirigir
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <div class="w-full p-8">
+      <div class="grid-footer">
+        <div class="flex justify-center">
+          <a
+            href="https://www.facebook.com/profile.php?id=100094927515340"
+            class="m-4"
+            ><i
+              class="fi fi-brands-facebook block rounded-full bg-gradient-to-t from-Light-Blue to-Fucsia p-2.5 text-[2rem] text-[#d6dee7]/[0.85] no-underline duration-300 hover:text-[#d6dee7] dark:text-[#242528] dark:hover:text-[#27282bf1]"
+            ></i
+          ></a>
+          <a
+            href="https://www.instagram.com/racknowledge_/?next=%2F"
+            class="m-4"
+          >
+            <svg
+              fill="#000000"
+              class="h-[52px] w-[52px] rounded-full bg-gradient-to-t from-Light-Blue to-Fucsia fill-[#d6dee7d9] p-2.5 duration-300 hover:fill-[#d6dee7] dark:fill-[#242528] dark:hover:fill-[#27282bf1]"
+              width="256px"
+              height="256px"
+              viewBox="0 0 19.2 19.2"
+              data-name="Instagram w/circle"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M13.498 6.651a1.656 1.656 0 0 0-.95-.949 2.766 2.766 0 0 0-.928-.172c-.527-.024-.685-.03-2.02-.03s-1.493.006-2.02.03a2.766 2.766 0 0 0-.929.172 1.656 1.656 0 0 0-.949.95 2.766 2.766 0 0 0-.172.928c-.024.527-.03.685-.03 2.02s.006 1.493.03 2.02a2.766 2.766 0 0 0 .172.929 1.656 1.656 0 0 0 .95.949 2.766 2.766 0 0 0 .928.172c.527.024.685.029 2.02.029s1.493-.005 2.02-.03a2.766 2.766 0 0 0 .929-.171 1.656 1.656 0 0 0 .949-.95 2.766 2.766 0 0 0 .172-.928c.024-.527.029-.685.029-2.02s-.005-1.493-.03-2.02a2.766 2.766 0 0 0-.171-.929zM9.6 12.168A2.568 2.568 0 1 1 12.168 9.6 2.568 2.568 0 0 1 9.6 12.168zm2.669-4.637a.6.6 0 1 1 .6-.6.6.6 0 0 1-.6.6zM11.267 9.6A1.667 1.667 0 1 1 9.6 7.933 1.667 1.667 0 0 1 11.267 9.6zM9.6 0a9.6 9.6 0 1 0 9.6 9.6A9.6 9.6 0 0 0 9.6 0zm4.97 11.661a3.67 3.67 0 0 1-.233 1.214 2.556 2.556 0 0 1-1.462 1.462 3.67 3.67 0 0 1-1.213.233c-.534.024-.704.03-2.062.03s-1.528-.006-2.062-.03a3.67 3.67 0 0 1-1.213-.233 2.556 2.556 0 0 1-1.462-1.462 3.67 3.67 0 0 1-.233-1.213c-.024-.534-.03-.704-.03-2.062s.006-1.528.03-2.062a3.67 3.67 0 0 1 .232-1.213 2.556 2.556 0 0 1 1.463-1.463 3.67 3.67 0 0 1 1.213-.232c.534-.024.704-.03 2.062-.03s1.528.006 2.062.03a3.67 3.67 0 0 1 1.213.232 2.556 2.556 0 0 1 1.462 1.463 3.67 3.67 0 0 1 .233 1.213c.024.534.03.704.03 2.062s-.006 1.528-.03 2.062z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <a href="https://twitter.com/Racknowled_" class="m-4"
+            ><i
+              class="fi fi-brands-twitter-alt-circle block rounded-full bg-gradient-to-t from-Light-Blue to-Fucsia p-2.5 text-[2rem] text-[#d6dee7]/[0.85] no-underline duration-300 hover:text-[#d6dee7] dark:text-[#242528] dark:hover:text-[#27282bf1]"
+            ></i
+          ></a>
+        </div>
+        <div class="flex justify-center">
+          <a
+            href="./otros/proceso.html"
+            class="text-lg opacity-80 dark:text-[#d6dee7]/80"
+            >Soporte Tecnico</a
+          >
+        </div>
+        <div class="flex justify-center">
+          <span class="text-sm opacity-80 dark:text-[#d6dee7]/80"
+            >Copyright &copy;2023; Designed by
+            <span
+              class="cursor-pointer font-medium text-Light-Blue"
+              onclick="team_rack()"
+              >TEAM RACKNOWLEDGE</span
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!---------------->
+</html>
