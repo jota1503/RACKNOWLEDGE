@@ -1,0 +1,249 @@
+<html lang="es">
+  <head>
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="./quiz1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link rel="stylesheet" href="../../../output.css" />
+  </head>
+  <body class="py-[7px]">
+    <div>
+      <i
+        class="fi fi-br-angle-left cursor-pointer rounded-full bg-gradient-to-r from-Light-Blue to-Fucsia p-2 pb-[5px] pr-[9px]"
+        onclick="regresar()"
+      ></i>
+    </div>
+    <div class="container">
+      <div class="encabezado">
+        <h1 id="categoria" class="m-0 text-lg font-semibold"></h1>
+        <p id="pregunta"></p>
+      </div>
+      <img id="imagen" />
+      <div class="opciones">
+        <div class="opcion" onclick="oprimir_btn(0)">
+          <button id="btn1"></button>
+        </div>
+        <div class="opcion" onclick="oprimir_btn(1)">
+          <button id="btn2"></button>
+        </div>
+        <div class="opcion" onclick="oprimir_btn(2)">
+          <button id="btn3"></button>
+        </div>
+        <div class="opcion" onclick="oprimir_btn(3)">
+          <button id="btn4"></button>
+        </div>
+      </div>
+      <div class="puntaje-container" style="display: none">
+        <h3 id="puntaje"></h3>
+        <button
+          class="reiniciar-btn"
+          id="reiniciar-btn"
+          onclick="reiniciarJuego()"
+        >
+          Reiniciar Juego
+        </button>
+      </div>
+    </div>
+
+    <script>
+      const preguntas = [
+        {
+          categoria: "Matematicas",
+          pregunta: "¿52 dividido por cuatro es igual a cuanto?",
+          respuesta: "13",
+          incorrecta1: "15",
+          incorrecta2: "11",
+          incorrecta3: "12",
+          img: "",
+          fit: "cover",
+        },
+        {
+          categoria: "Matematicas",
+          pregunta: "¿Cuál es el resultado de (7 + 3) x 5?",
+          respuesta: "50",
+          incorrecta1: "35",
+          incorrecta2: "25",
+          incorrecta3: "40",
+          img: "",
+        },
+        {
+          categoria: "Matematicas",
+          pregunta:
+            "Si un triángulo equilátero tiene un lado de longitud 6 cm, ¿cuánto mide su perímetro?",
+          respuesta: "18",
+          incorrecta1: "12",
+          incorrecta2: "20",
+          incorrecta3: "24",
+          img: "",
+        },
+        {
+          categoria: "Matematicas",
+          pregunta: "Resuelve la siguiente operación: (15 - 3) x 4 / 6",
+          respuesta: "8",
+          incorrecta1: "5",
+          incorrecta2: "10",
+          incorrecta3: "6",
+          img: "",
+        },
+        {
+          categoria: "Ciencias",
+          pregunta: "¿Cuál es la capital de Francia?",
+          respuesta: "París",
+          incorrecta1: "Madrid",
+          incorrecta2: "Berlín",
+          incorrecta3: "Londres",
+          img: "",
+        },
+        {
+          categoria: "Ciencias",
+          pregunta: "¿Cuál es el símbolo químico del agua?",
+          respuesta: "H2O",
+          incorrecta1: "O2",
+          incorrecta2: "CO2",
+          incorrecta3: "NaCl",
+          img: "",
+        },
+        {
+          categoria: "Historia",
+          pregunta: "¿En qué año empezó la Primera Guerra Mundial?",
+          respuesta: "1914",
+          incorrecta1: "1939",
+          incorrecta2: "1945",
+          incorrecta3: "1918",
+          img: "",
+        },
+        {
+          categoria: "Historia",
+          pregunta: "¿Quién fue el primer presidente de los Estados Unidos?",
+          respuesta: "George Washington",
+          incorrecta1: "Thomas Jefferson",
+          incorrecta2: "Abraham Lincoln",
+          incorrecta3: "John Adams",
+          img: "",
+        },
+        // si quiere agregue mas preguntas o como quiera
+      ];
+
+      const NUM_PREGUNTAS = preguntas.length;
+      let preguntaActual;
+      let posiblesRespuestas;
+      let btn_correspondiente = [
+        select_id("btn1"),
+        select_id("btn2"),
+        select_id("btn3"),
+        select_id("btn4"),
+      ];
+
+      let respuestaSeleccionada = false;
+      let puntaje = 0;
+      let preguntasRestantes = NUM_PREGUNTAS;
+
+      document.addEventListener("DOMContentLoaded", () => {
+        escogerPreguntaAleatoria();
+      });
+
+      function escogerPreguntaAleatoria() {
+        respuestaSeleccionada = false;
+        if (preguntas.length > 0 && preguntasRestantes > 0) {
+          let n = Math.floor(Math.random() * preguntas.length);
+          escogerPregunta(n);
+        } else {
+          mostrarPuntaje();
+        }
+      }
+
+      function escogerPregunta(n) {
+        preguntaActual = preguntas[n];
+        select_id("categoria").innerHTML = preguntaActual.categoria;
+        select_id("pregunta").innerHTML = preguntaActual.pregunta;
+        select_id("imagen").setAttribute("src", preguntaActual.img);
+        style("imagen").objectFit = preguntaActual.fit || "cover";
+        if (preguntaActual.img) {
+          style("imagen").height = "200px";
+          style("imagen").width = "100%";
+        } else {
+          style("imagen").height = "0px";
+          style("imagen").width = "0px";
+        }
+
+        desordenarRespuestas();
+      }
+
+      function desordenarRespuestas() {
+        posiblesRespuestas = [
+          preguntaActual.respuesta,
+          preguntaActual.incorrecta1,
+          preguntaActual.incorrecta2,
+          preguntaActual.incorrecta3,
+        ];
+        posiblesRespuestas.sort(() => Math.random() - 0.5);
+        for (let i = 0; i < 4; i++) {
+          btn_correspondiente[i].innerHTML = posiblesRespuestas[i];
+        }
+      }
+
+      function oprimir_btn(i) {
+        if (!respuestaSeleccionada) {
+          respuestaSeleccionada = true;
+          if (posiblesRespuestas[i] === preguntaActual.respuesta) {
+            btn_correspondiente[i].classList.add("correcta");
+            puntaje++;
+          } else {
+            btn_correspondiente[i].classList.add("incorrecta");
+            for (let j = 0; j < 4; j++) {
+              if (posiblesRespuestas[j] === preguntaActual.respuesta) {
+                btn_correspondiente[j].classList.add("correcta");
+                break;
+              }
+            }
+          }
+          setTimeout(() => {
+            reiniciar();
+          }, 3000);
+        }
+      }
+
+      function reiniciar() {
+        for (const btn of btn_correspondiente) {
+          btn.classList.remove("correcta", "incorrecta");
+        }
+        preguntasRestantes--;
+        escogerPreguntaAleatoria();
+      }
+
+      function mostrarPuntaje() {
+        document.querySelector(".opciones").style.display = "none";
+        document.querySelector(".puntaje-container").style.display = "block";
+        document.querySelector(".encabezado").style.display = "none";
+        select_id("puntaje").innerHTML =
+          `Puntaje: ${puntaje} de ${NUM_PREGUNTAS}`;
+        select_id("reiniciar-btn").style.display = "block";
+      }
+
+      function reiniciarJuego() {
+        puntaje = 0;
+        preguntasRestantes = NUM_PREGUNTAS;
+        document.querySelector(".opciones").style.display = "flex";
+        document.querySelector(".puntaje-container").style.display = "none";
+        document.querySelector(".encabezado").style.display = "block";
+        select_id("reiniciar-btn").style.display = "none";
+        escogerPreguntaAleatoria();
+      }
+
+      function select_id(id) {
+        return document.getElementById(id);
+      }
+
+      function style(id) {
+        return select_id(id).style;
+      }
+    </script>
+    <script>
+      function regresar() {
+        window.location.href = "../eval_carrusel.html";
+      }
+    </script>
+  </body>
+</html>
