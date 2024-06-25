@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$mysqliConnect = new mysqli('localhost', 'root', '', 'racknowledge');
+$mysqliConnect = mysqli_connect("sql300.infinityfree.com", "if0_36782738", "MMh0nDS7RTgj", "if0_36782738_racknowledge");
 if ($mysqliConnect->connect_error) {
     die("Error al conectar a la base de datos: " . $mysqliConnect->connect_error);
 }
@@ -22,7 +22,7 @@ if ($resultado && $resultado->num_rows > 0) {
 
         switch ($fila['rol']) {
             case '1':
-                header("Location: home_estu.html");
+                header("Location: home_est.html");
                 exit();
             case '2':
                 header("Location: home_prof.html");

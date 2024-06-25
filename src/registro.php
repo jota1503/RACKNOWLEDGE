@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$link = new mysqli('localhost', 'root', '', 'racknowledge');
+$link = mysqli_connect('sql300.infinityfree.com', 'if0_36782738', 'MMh0nDS7RTgj', 'if0_36782738_racknowledge');
 if (!$link) {
     echo "Error al conectar a la base de datos";
 }
@@ -12,7 +12,14 @@ $formselect_tip_doc = $_POST["formselect_tip_doc"];
 $n_doc_Reg = $_POST["n_doc_Reg"];
 $email_Reg = $_POST["email_Reg"];
 $tel_Reg = $_POST["tel_Reg"];
-$f_nac_Reg = $_POST["f_nac_Reg"];
+$day = $_POST['day'];
+$mes = $_POST['mes'];
+$year = $_POST['year'];
+$pass_Reg = $_POST["pass_Reg"];
+$form_select_rol = $_POST["form_select_rol"];
+
+//crear cadena fecha YY-MM-DD
+$f_nac_Reg = "$year-$mes-$day";
 
 // Mapear valores del formulario a los IDs de los roles
 $rol_mapping = array(
@@ -21,13 +28,9 @@ $rol_mapping = array(
     "admin" => 3 // ID del rol para Administrador
 );
 
-// Obtener el valor seleccionado del formulario
-$form_select_rol = $_POST["form_select_rol"];
-
-// Obtener el ID de rol correspondiente al valor seleccionado
 $rol_id = isset($rol_mapping[$form_select_rol]) ? $rol_mapping[$form_select_rol] : null;
 
-$pass_Reg = $_POST["pass_Reg"];
+
 
 $contrasena_hash = password_hash($pass_Reg, PASSWORD_DEFAULT);
 
