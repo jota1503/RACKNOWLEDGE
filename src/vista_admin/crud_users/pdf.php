@@ -4,7 +4,7 @@ require 'vendor/setasign/fpdf/fpdf.php';
 $host = "localhost";
 $user = "root";
 $pass = "";
-$bd = "registro";
+$bd = "racknowledge";
 
 $con = new mysqli($host, $user, $pass, $bd);
 
